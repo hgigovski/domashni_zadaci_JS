@@ -9,11 +9,11 @@
       π * r2)
     </title>
     <script>
-      var radius = prompt(
-        "Calculate the area of your circle by typing your radius:"
+      var radius = parseFloat(
+        prompt("Calculate the area of your circle by typing your radius:")
       );
 
-      var circleArea = parseInt(radius * radius) * 3.1415;
+      var circleArea = radius * radius * 3.1415;
       console.log("Your circle area is:" + circleArea);
     </script>
   </head>
