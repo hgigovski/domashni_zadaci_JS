@@ -82,12 +82,12 @@ console.log(`"${animal.kind} ${animal.name} says:${animal.speak()}"`);
 // Already read 'The Robots of dawn' by Isaac Asimov. (when readingStatus is true)
 // You still need to read 'Mockingjay: The Final Book of The Hunger Games' by Suzanne Collins. (when readingStatus is false).
 
-let bookOne = {
+let book = {
   title: "The Robots of dawn",
   author: "Isaac Asimov",
   readingStatus: false,
   getInfo() {
-    if (bookOne.readingStatus == true) {
+    if (book.readingStatus == true) {
       return `Already read "${this.title}" by  ${this.author}.`;
     } else {
       return `You still need to read ${this.title} by ${this.author}.`;
@@ -95,8 +95,8 @@ let bookOne = {
   },
 };
 
-console.log(bookOne.getInfo());
+console.log(book.getInfo());
 
 bookOne.readingStatus = true;
 
-console.log(bookOne.getInfo());
+console.log(book.getInfo());
