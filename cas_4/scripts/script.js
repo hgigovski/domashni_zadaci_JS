@@ -82,7 +82,7 @@ console.log(`"${animal.kind} ${animal.name} says:${animal.speak()}"`);
 // Already read 'The Robots of dawn' by Isaac Asimov. (when readingStatus is true)
 // You still need to read 'Mockingjay: The Final Book of The Hunger Games' by Suzanne Collins. (when readingStatus is false).
 
-bookOne = {
+let bookOne = {
   title: "The Robots of dawn",
   author: "Isaac Asimov",
   readingStatus: false,
