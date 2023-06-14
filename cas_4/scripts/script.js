@@ -90,7 +90,7 @@ bookOne = {
     if (bookOne.readingStatus == true) {
       return `Already read "${this.title}" by  ${this.author}.`;
     } else {
-      return `You still need to read "Mockingjay: The Final Book of The Hunger Games" by Suzanne Collins.`;
+      return `You still need to read ${this.title} by ${this.author}.`;
     }
   },
 };
