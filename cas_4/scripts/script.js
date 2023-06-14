@@ -97,6 +97,6 @@ let book = {
 
 console.log(book.getInfo());
 
-bookOne.readingStatus = true;
+book.readingStatus = true;
 
 console.log(book.getInfo());
