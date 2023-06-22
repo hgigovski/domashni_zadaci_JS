@@ -31,7 +31,7 @@ function studentsGender(male, female) {
   return `${female} girls | ${male} boys`;
 }
 
-let teamGender = studentsGender(12, 3);
+let teamGender = studentsGender(12, 24);
 
 console.log(teamGender);
 
