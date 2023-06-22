@@ -35,6 +35,18 @@ function combineNames(firstNames, lastNames) {
 combineNames(first, last);
 console.log(fullName);
 
+//zadaca 3
+function printRange() {
+  let result = "";
+  for (let i = 1; i <= 20; i++) {
+    let isEven = i % 2 == 0 ? "\n" : " ";
+    result += `${i}${isEven}`;
+  }
+  console.log(result);
+}
+
+printRange();
+
 //zadaca 4.
 
 let number = prompt("Insert a number:");
