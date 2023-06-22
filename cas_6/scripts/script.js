@@ -41,10 +41,10 @@ let number = prompt("Insert a number:");
 
 function multiplyDigits(number) {
   let result = 1;
-  const digits = String(number).split("");
+  let digits = String(number).split("");
 
   for (let i = 0; i < digits.length; i++) {
-    const digit = parseInt(digits[i]);
+    let digit = parseInt(digits[i]);
     result *= digit;
   }
 
