@@ -44,6 +44,7 @@ let lastNames = [
   "Vasilev",
   "Stojanovska",
 ];
+let fullName = [];
 
 function combineNames(firstNames, lastNames) {
   for (let i = 0; i < firstNames.length; i++) {
