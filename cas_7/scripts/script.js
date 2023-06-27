@@ -45,10 +45,6 @@ let lastNames = [
   "Stojanovska",
 ];
 
-let first = ["Hristo", "Filip"];
-let last = ["Gigovski", "Trajanovski"];
-let fullName = [];
-
 function combineNames(firstNames, lastNames) {
   for (let i = 0; i < firstNames.length; i++) {
     let combinedNames = `${firstNames[i]} ${lastNames[i]}`;
