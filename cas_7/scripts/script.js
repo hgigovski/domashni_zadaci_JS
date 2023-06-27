@@ -46,9 +46,9 @@ let lastNames = [
 ];
 let fullName = [];
 
-function combineNames(firstNames, lastNames) {
-  for (let i = 0; i < firstNames.length; i++) {
-    let combinedNames = `${firstNames[i]} ${lastNames[i]}`;
+function combineNames(firstNamesArr, lastNamesArr) {
+  for (let i = 0; i < firstNamesArr.length; i++) {
+    let combinedNames = `${firstNamesArr[i]} ${lastNamesArr[i]}`;
     fullName.push(combinedNames);
   }
   fullName.forEach((x) => {
