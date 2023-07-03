@@ -81,7 +81,7 @@ console.log(arrProducts);
 
 //Zadaca 2
 
-let changeTitle = document.getElementsByTagName("h1")[1];
+let changeTitle = document.getElementsByTagName("h1")[0];
 changeTitle.innerText = "Profesor";
 
 let changeParagraph = document.getElementsByClassName("paragraph");
@@ -93,7 +93,7 @@ changeParagraphTwo.innerText = "Profesor vo semos";
 let changeParagraphThree = document.querySelector("text");
 changeParagraphThree.innerText = "SMENET TEXT";
 
-let changeParagraphFour = document.querySelector("#myTitle");
+let changeParagraphFour = document.getElementsByTagName("h1")[1];
 changeParagraphFour.innerText = "PROMENAAA123232";
 
 let changeParagraphFive = document.querySelector("h3");
