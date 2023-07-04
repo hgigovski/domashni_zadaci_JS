@@ -121,14 +121,8 @@ function fetchRandomTodo() {
       let toDo = users[Math.floor(Math.random() * users.length + 1)];
       console.log(toDo.id);
       console.log(toDo.title);
-      if (toDo.completed) {
-        console.log("Completed");
-      } else {
-        console.log("Not completed");
-      }
+      toDo.completed ? console.log("Completed") : console.log("Not completed");
     })
     .catch((error) => console.log(error.message))
-    .finally(() =>
-      console.log("Ova ke se izvrsi bezrazlika dali povikot e dobar ili ne")
-    );
+    .finally(() => console.log(":)" + new Date().toString()));
 }
