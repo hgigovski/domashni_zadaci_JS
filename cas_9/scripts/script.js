@@ -55,7 +55,7 @@ function weightInChickens(weight) {
   }
 }
 
-// weightInChickens();
+weightInChickens();
 
 //Zadaca 3 :
 
@@ -84,7 +84,7 @@ for (let i = 0; i < ingrediantsArr.length; i++) {
   createdItemIngrediant.innerText = ingrediantsArr[i];
 }
 
-//Zadaca 4 :
+// //Zadaca 4 :
 let createdTitle3 = document.createElement("h3");
 createdTitle3.innerText = "Zadaca-4 Reshenie:";
 document.body.appendChild(createdTitle3);
@@ -105,4 +105,30 @@ function generateTitle() {
   createdCaption.style.fontSize = fontSize + "px";
 
   document.body.appendChild(createdCaption);
+}
+
+//Zadaca 5 :
+
+todoButton.addEventListener("click", (event) => {
+  fetchRandomTodo();
+});
+
+function fetchRandomTodo() {
+  fetch("https://jsonplaceholder.typicode.com/todos")
+    .then((response) => response.json())
+    .then((json) => {
+      let users = json;
+      let toDo = users[Math.floor(Math.random() * users.length + 1)];
+      console.log(toDo.id);
+      console.log(toDo.title);
+      if (toDo.completed) {
+        console.log("Completed");
+      } else {
+        console.log("Not completed");
+      }
+    })
+    .catch((error) => console.log(error.message))
+    .finally(() =>
+      console.log("Ova ke se izvrsi bezrazlika dali povikot e dobar ili ne")
+    );
 }
